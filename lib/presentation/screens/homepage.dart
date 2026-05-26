@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:macrofactor_clone/presentation/widgets/home_screen_dashboard.dart';
+import 'package:macrofactor_clone/presentation/widgets/home_dashboard/home_screen_dashboard.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
