@@ -6,11 +6,14 @@ class MacrofactorTheme {
   static ThemeData getTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
-    primaryColor: const Color(0x0C0C0C0C),
+    // primaryColor: const Color(0xFF1F1F1F),
     colorScheme: ColorScheme.fromSeed(
       seedColor: const Color(0x0C0C0C0C),
-      primary: const Color(0x0C0C0C0C),
-      secondary: const Color(0xFF1F1F1F),
+      primary: const Color(0xFF1F1F1F),
+      secondary: const Color(0x0C0C0C0C),
+    ),
+    textTheme: TextTheme(
+      headlineLarge: TextStyle(fontSize: 20, color: Colors.white),
     ),
   );
 }
