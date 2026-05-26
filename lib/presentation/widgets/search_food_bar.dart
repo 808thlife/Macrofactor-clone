@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 class SearchFoodBar extends StatelessWidget{
   const SearchFoodBar({super.key});
-   final late _formKey
+   final late _formKey;
 
 
   @override
