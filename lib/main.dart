@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Macrofactor',
       debugShowCheckedModeBanner: false,
       theme: MacrofactorTheme.getTheme,
-      home: const HomePage(),
+      home: const HomePageScreen(),
     );
   }
 }
