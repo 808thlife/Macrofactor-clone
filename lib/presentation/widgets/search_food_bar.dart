@@ -13,6 +13,7 @@ class SearchFoodBar extends StatelessWidget {
               return Text("Some");
             },
           ),
+          Text(""),
         ],
       ),
     );
