@@ -11,6 +11,8 @@ class MacrofactorTheme {
       seedColor: const Color(0x0C0C0C0C),
       primary: const Color(0xFF1F1F1F),
       secondary: const Color(0x0C0C0C0C),
+      onPrimary: Colors.white,
+      onSecondary: Colors.white,
     ),
     textTheme: TextTheme(
       headlineLarge: TextStyle(fontSize: 20, color: Colors.white),
