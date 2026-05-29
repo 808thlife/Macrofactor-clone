@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MacrofactorTheme {
   MacrofactorTheme._();
@@ -16,8 +17,23 @@ class MacrofactorTheme {
       shadow: const Color(0xFFAEAEAE),
       surface: const Color(0xFF333333),
     ),
-    textTheme: TextTheme(
-      headlineLarge: TextStyle(fontSize: 20, color: Colors.white),
+    textTheme: GoogleFonts.dmSansTextTheme().copyWith(
+      headlineLarge: GoogleFonts.dmSans(
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
+      headlineMedium: GoogleFonts.dmSans(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
+      headlineSmall: GoogleFonts.dmSans(
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      ),
+      bodyMedium: GoogleFonts.dmSans(fontSize: 14, color: Colors.white),
     ),
   );
 }

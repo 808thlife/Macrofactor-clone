@@ -18,7 +18,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
   final _screens = [
     const HomeScreenDashboard(),
     const SizedBox(), // FAB
-    const FoodLogTab(),
+    FoodLogTab(),
   ];
 
   void onTabTapped(int index) {
