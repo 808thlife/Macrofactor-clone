@@ -24,11 +24,14 @@ class NavBarItem extends StatelessWidget {
       onTap: onTap,
       child: SizedBox(
         width: 70,
+
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, color: color),
-            const SizedBox(height: 4),
+            SizedBox(
+              height: 35,
+              child: Center(child: Icon(icon, color: color, size: 30)),
+            ),
             Text(label, style: TextStyle(color: color, fontSize: 12)),
           ],
         ),

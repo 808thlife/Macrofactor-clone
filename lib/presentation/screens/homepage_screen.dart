@@ -34,7 +34,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
 
       bottomNavigationBar: Container(
         color: Theme.of(context).colorScheme.primary,
-        padding: const EdgeInsets.only(bottom: 30, top: 10),
+        padding: const EdgeInsets.only(bottom: 20, top: 5),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,14 +49,23 @@ class _HomePageScreenState extends State<HomePageScreen> {
               onTap: () => onTabTapped(0),
             ),
 
-            IconButton(
-              icon: const Icon(Icons.add),
+            SizedBox(
+              width: 35,
+              height: 35,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: const CircleBorder(),
 
-              onPressed: () => onTabTapped(1),
+                  padding: EdgeInsets.zero,
+                  minimumSize: Size.zero,
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  elevation: 0,
+                ),
 
-              color: currentIndex == 1
-                  ? Theme.of(context).colorScheme.onPrimary
-                  : Theme.of(context).colorScheme.shadow,
+                onPressed: () {},
+
+                child: const Icon(Icons.add, color: Colors.black),
+              ),
             ),
 
             NavBarItem(
