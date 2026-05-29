@@ -7,6 +7,7 @@ class SearchFoodBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 70,
       color: Theme.of(context).colorScheme.primary,
       child: Padding(
         padding: const EdgeInsets.all(10),
@@ -18,8 +19,12 @@ class SearchFoodBar extends StatelessWidget {
             Expanded(
               child: TextField(
                 decoration: InputDecoration(
-                  hintText: 'Search for food...',
-                  hintStyle: TextStyle(color: Colors.white),
+                  hintText: 'Search for a food',
+                  // removing pre-set padding to make align with the book icon
+                  contentPadding: const EdgeInsets.symmetric(vertical: 0),
+                  hintStyle: TextStyle(
+                    color: Theme.of(context).colorScheme.shadow,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30)),
                     borderSide: BorderSide.none,
@@ -28,15 +33,30 @@ class SearchFoodBar extends StatelessWidget {
                     MdiIcons.magnify,
                     color: Theme.of(context).colorScheme.onPrimary,
                   ),
+                  suffixIcon: Icon(
+                    MdiIcons.barcodeScan,
+                    color: Theme.of(context).colorScheme.onPrimary,
+                  ),
                   filled: true,
                   fillColor: Theme.of(context).colorScheme.surface,
                 ),
               ),
             ),
             const SizedBox(width: 15),
-            const Icon(
-              MdiIcons.bookOpenPageVariantOutline,
-              color: Colors.white,
+            Container(
+              height: 50,
+              width: 50,
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.surface,
+                borderRadius: BorderRadius.all(Radius.circular(30)),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: const Icon(
+                  MdiIcons.bookOpenPageVariantOutline,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ],
         ),
