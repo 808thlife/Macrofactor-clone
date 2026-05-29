@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
+import 'package:macrofactor_clone/presentation/screens/add_food_screen.dart';
 import 'package:macrofactor_clone/presentation/tabs/food_log_tab.dart';
 import 'package:macrofactor_clone/presentation/widgets/home_dashboard/home_screen_dashboard.dart';
 import 'package:macrofactor_clone/presentation/widgets/navbar_item.dart';
@@ -69,7 +70,14 @@ class _HomePageScreenState extends State<HomePageScreen> {
                       elevation: 0,
                     ),
 
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LogFoodScreen(),
+                        ),
+                      );
+                    },
 
                     child: const Icon(Icons.add, color: Colors.black),
                   ),

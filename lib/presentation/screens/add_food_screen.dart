@@ -5,6 +5,15 @@ class LogFoodScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        actions: [],
+        iconTheme: IconThemeData(
+          color: Theme.of(context).colorScheme.onPrimary,
+        ),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+      ),
+      backgroundColor: Theme.of(context).colorScheme.secondary,
+    );
   }
 }

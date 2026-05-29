@@ -14,7 +14,7 @@ class FoodLogTab extends StatelessWidget {
           child: SafeArea(
             bottom: false, // only apply top safe area
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(
                   onPressed: () {},
@@ -25,7 +25,7 @@ class FoodLogTab extends StatelessWidget {
                 ),
                 Text(
                   "Today",
-                  style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                     color: Theme.of(context).colorScheme.onPrimary,
                   ),
                 ),
