@@ -14,6 +14,7 @@ class MacrofactorTheme {
       onPrimary: Colors.white,
       onSecondary: Colors.white,
       shadow: const Color(0xFFAEAEAE),
+      surface: const Color(0xFF333333),
     ),
     textTheme: TextTheme(
       headlineLarge: TextStyle(fontSize: 20, color: Colors.white),
